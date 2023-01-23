@@ -1,0 +1,16 @@
+/* universal code  */
+
+
+
+
+
+
+/* banner section  */
+.banner {
+    background:linear-gradient(90deg, #111111 0%, transparent 50%, rgba(17, 17, 17, 0) 100%), url(../images/banner.png);
+    height: 560px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

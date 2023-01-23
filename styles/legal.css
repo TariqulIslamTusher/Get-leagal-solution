@@ -14,3 +14,13 @@
     background-position: center;
     background-size: cover;
 }
+
+
+/* slider section */
+.carousel-item img{
+    background:linear-gradient(90deg, rgb(250, 250, 250) 0%, transparent 50%, rgba(17,17,17,0) 100%);
+    height: 550px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

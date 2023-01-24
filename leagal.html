@@ -53,7 +53,7 @@
             <div class="modal-title px-5">
               <h3 class="text-warning d-block">Warning!!</h3>
             </div>
-            <button class="btn btn-close p-2 bg-warning" data-bs-dismiss="modal"></button>
+            <button class="btn btn-close p-2 me-3 bg-danger" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body bg-body-secondary px-5">
             <p class="text-danger fw-semibold">Your data will be collected for future training/evidence purpose</p>
@@ -72,23 +72,21 @@
 
     <!--making modal no 2  -->
     <div class="modal fade" id="modalID2">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header p-3 bg-primary-subtle text-uppercase fw-bold">Please Fill the following form</div>
           <div class="modal-body p-3">
+            <input  placeholder="Your Name" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="text" required>
 
-            <input required placeholder="Your Name" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="text" name="" id="">
+            <input  placeholder="Your Email" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="email" required>
 
-
-            <input required placeholder="Your Email" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="email" name="" id="">
-
-            <input required placeholder="Subject of Case" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="text" name="" id="">
-
+            <input  placeholder="Subject of Case" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="text" required>
 
             <textarea name="opinion" placeholder="Your Massage" class="bg-body-secondary w-100 border-0 rounded-2 py-4 px-4 mb-2" id="opinion" cols="30" rows="3"></textarea>
+
           </div>
           <div class="modal-footer p-3">
-            <button class="btn btn-outline-danger" data-bs-dismiss="">Decline</button>
+            <button class="btn btn-outline-danger" data-bs-dismiss="modal">Decline</button>
             <button class="btn btn-success" data-bs-target="#modalID3" data-bs-toggle="modal">Confirm</button>
           </div>
         </div>
@@ -100,7 +98,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-success-subtle p-5">
           <h4 class="text-center text-success h2">Congratulation!!!</h4>
-          <p class="text-danger text-center h3">You will be quaried by one of our member</p>
+          <p class="text-danger text-center h3">You will be notified by one of our member</p>
         </div>
       </div>
     </div>
@@ -108,7 +106,9 @@
 
 
 
-    <!-- Banner section  -->
+    <!-------------------
+       Banner section 
+      ------------------>
 
     <section class="row banner container d-flex align-items-center mx-auto">
       <article class="col-sm-11 col-md-10 col-lg-8 caption mx-auto text-center">
@@ -123,10 +123,15 @@
   </header>
 
 
+  <!-- -----------------------------
+              main section
+  ----------------------------------- -->
+
   <main class="container mt-5 py-5 lh-lg">
 
-
-    <!-- Service Section  -->
+    <!-- --------------
+      Service Section
+    -------------------->
 
     <section class="row" id="service">
 
@@ -140,9 +145,9 @@
       <div class="row mt-4 text-wrap mx-auto">
 
         <div class="card col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-around text-center border py-5 px-3 border-2 border-secondary-subtle ">
-          <img class="w-25 mx-auto img-fluid" src="images/business.png" alt="">
+          <img class="w-25 mh-25 mx-auto img-fluid" src="images/business.png" alt="">
           <h1 class="mt-5 mb-3 fw-bold">Business Law</h1>
-          <p class="text-black-50 mx-2 px-1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p class="text-justify text-black-50 mx-2 px-1">Business law, also called commercial law or mercantile law, the body of rules, whether by convention, agreement, or national or international legislation.</p>
 
           <div class="icon w-50 mx-auto mt-3">
             <img class="w-25 img-fluid" src="images/Frame.png" alt="">
@@ -150,9 +155,9 @@
         </div>
 
         <div class="card col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-around text-center border py-5 px-3 border-2 border-secondary-subtle ">
-          <img class="w-25 mx-auto img-fluid" src="images/criminal.png" alt="">
+          <img class="w-25 mh-25 mx-auto img-fluid" src="images/criminal.png" alt="">
           <h1 class="mt-5 mb-3 fw-bold">Criminal Law</h1>
-          <p class="text-black-50 mx-2 px-1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p class="text-justify text-black-50 mx-2 px-1">Criminal law is the body of law that relates to crime. It prescribes conduct perceived as threatening, harmful, or otherwise endangering to the property.</p>
 
           <div class="icon w-50 mx-auto mt-3">
             <img class="w-25 img-fluid" src="images/Frame.png" alt="">
@@ -160,9 +165,9 @@
         </div>
 
         <div class="card col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-around text-center border py-5 px-3 border-2 border-secondary-subtle ">
-          <img class="w-25 mx-auto img-fluid" src="images/child.png" alt="">
+          <img class="w-25 mh-25 mx-auto img-fluid" src="images/child.png" alt="">
           <h1 class="mt-5 mb-3 fw-bold">Child Support</h1>
-          <p class="text-black-50 mx-2 px-1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p class="text-justify text-black-50 mx-2 px-1"> In order that every child shall not be subjected to arbitrary infringement of his honour, personal freedom and security, relevant Government.</p>
 
           <div class="icon w-50 mx-auto mt-3">
             <img class="w-25 img-fluid" src="images/Frame.png" alt="">
@@ -170,9 +175,9 @@
         </div>
 
         <div class="card col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-around text-center border py-5 px-3 border-2 border-secondary-subtle ">
-          <img class="w-25 mx-auto img-fluid" src="images/education.png" alt="">
+          <img class="w-25 mh-25 mx-auto img-fluid" src="images/education.png" alt="">
           <h1 class="mt-5 mb-3 fw-bold">Education Law</h1>
-          <p class="text-black-50 mx-2 px-1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p class="text-justify text-black-50 mx-2 px-1">Education law involves a diverse range of issues from representing children with poor access to education to special education law to education reform.</p>
 
           <div class="icon w-50 mx-auto mt-3">
             <img class="w-25 img-fluid" src="images/Frame.png" alt="">
@@ -180,9 +185,9 @@
         </div>
 
         <div class="card col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-around text-center border py-5 px-3 border-2 border-secondary-subtle ">
-          <img class="w-25 mx-auto img-fluid" src="images/divorce.png" alt="">
+          <img class="w-25 mh-25 mx-auto img-fluid" src="images/divorce.png" alt="">
           <h1 class="mt-5 mb-3 fw-bold">Divorce Law</h1>
-          <p class="text-black-50 mx-2 px-1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p class="text-justify text-black-50 mx-2 px-1">Divorce entails the cancelation or reorganisation of the legal responsibilities of marriage by dissolving the bonds of marriage between a married couple under the rule of law of a particular state.</p>
 
           <div class="icon w-50 mx-auto mt-3">
             <img class="w-25 img-fluid" src="images/Frame.png" alt="">
@@ -190,9 +195,9 @@
         </div>
 
         <div class="card col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-around text-center border py-5 px-3 border-2 border-secondary-subtle ">
-          <img class="w-25 mx-auto img-fluid" src="images/tax.png" alt="">
+          <img class="w-25 mh-25 mx-auto img-fluid" src="images/tax.png" alt="">
           <h1 class="mt-5 mb-3 fw-bold">Tax Law</h1>
-          <p class="text-black-50 mx-2 px-1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p class="text-justify text-black-50 mx-2 px-1">body of rules under which a public authority has a claim on taxpayers, requiring them to transfer to the authority part of their income or property. The power to impose taxes is generally recognized as a right of governments..</p>
 
           <div class="icon w-50 mx-auto mt-3">
             <img class="w-25 img-fluid" src="images/Frame.png" alt="">
@@ -202,7 +207,11 @@
       </div>
     </section>
 
-    <!-- Clients comment on slider  -->
+    <!------------------------------
+       Clients comment on slider  
+      ------------------------------>
+
+
     <section class="slider-section py-5 mt-5 px-1" id="blog">
 
         <article class="row mb-4">
@@ -213,7 +222,9 @@
         </article>
 
 
-        <!-- Slider part  -->
+        <!-------------------
+           Slider section
+        --------------------->
 
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -227,9 +238,10 @@
 
               <div class="carousel-caption w-75 d-none d-md-block text-center position-absolute top-50 start-50 translate-middle">
                 <img class="rounded-5 img-fluid mb-3 mx-auto h-25" src="images/handsome-young-businessman-suit.jpg" alt="">
-                <h4>Awlad Hossain</h4>
+                <h3>Rober Poffert</h3>
                 <h6 class="my-3 text-warning">UX/UI designer</h6>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                <p>What is a law in your own words?
+                  A law is a rule made by an authority and that must be obeyed. A law is commonly made by a government, which citizens must follow or face punishment. For example, in most places there are laws about not stealing..</p>
               </div>
 
             </div>
@@ -238,9 +250,9 @@
 
               <div class="carousel-caption w-75 d-none d-md-block text-center position-absolute top-50 start-50 translate-middle">
                 <img class="rounded-5 img-fluid mb-3 mx-auto h-25" src="images/cheerful-curly-business-girl-wearing-glasses.jpg" alt="">
-                <h4>Mrs Romiye stack</h4>
-                <h6 class="my-3 text-warning">UX/UI designer</h6>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                <h4>Mrs Romiye Rihana</h4>
+                <h6 class="my-3 text-warning">Web Developer</h6>
+                <p>Law is a system of rules that are created and enforced through social or governmental institutions to regulate behavior. This is basically about the principles and regulations established in a community or state, by some authority, and applicable to the people living in it..</p>
               </div>
             </div>
             <div class="carousel-item">
@@ -248,9 +260,9 @@
 
               <div class="carousel-caption w-75 d-none d-md-block text-center position-absolute top-50 start-50 translate-middle">
                 <img class="rounded-5 img-fluid mb-3 mx-auto h-25" src="images/skyscraper-view-city-leader-window-frame.jpg" alt="">
-                <h4>Robart Charlie</h4>
-                <h6 class="my-3 text-warning">UX/UI designer</h6>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                <h4>Mr Joe Biden</h4>
+                <h6 class="my-3 text-warning">Gov Job Holder</h6>
+                <p>Law, in the broadest sense, can be defined as rules established by a governing authorityto institute and maintain order in a civilized society. However, to define and understand law solely as a tool to maintain a civilized society and to promote civil rights would be to understand law only in its ideal form. Law can be used as a weapon in social conflicts between unequal groups in our society; those with power, whether it is economic or societal power, can manipulate the law to promote their own interests against others. </p>
               </div>
             </div>
           </div>
@@ -267,13 +279,15 @@
     </section>
 
 
-    <!-- Question And Answer section  -->
+    <!---------------------------------
+      Question And Answer section  
+    ---------------------------------->
 
     <section class="question py-5 mt-5 px-1">
       <article class="row mb-4 question-heading">
-        <div class="col-md-8 text-center mx-auto">
+        <div class="col-md-10 text-center mx-auto">
           <h1 class="h-1 text-black fw-bolder my-3">Frequently Asked Any Questions</h1>
-          <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p class="lead text-justify">Many of question are asked by our client are very common in number, but reapedly answering thus question is time wasting and annoying too. We finally made up question and answer sassion for the people , who wants to query us in common question.</p>
         </div> 
       </article>
 
@@ -282,7 +296,7 @@
           <div class="accordion-item my-5 bg-light">
             <h2 class="accordion-header" id="flush-headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <strong>What is difference between flexbox and Grid? </strong>
+                <strong>What is the difference between flexbox and Grid? </strong>
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -292,7 +306,7 @@
           <div class="accordion-item my-5 bg-light">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                <strong>What is the purpose of @media query? How does it work?</strong>
+                <strong>What is the purpose of @media query?</strong>
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -302,7 +316,7 @@
           <div class="accordion-item my-5 bg-light">
             <h2 class="accordion-header" id="flush-headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                <strong>What is Css Box-model?</strong>
+                <strong>What is Css Box-model?  How does it work?</strong>
               </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -336,16 +350,22 @@
 
 
 
-    <!-- Contact Section  -->
+    <!-------------------
+       Contact Section
+      ------------------->
 
     <section class="contact py-5 mt-5 px-1" id="contact">
+
       <!-- contact heading  -->
+
       <article class="row mb-4 question-heading">
         <div class="col-md-8 text-center mx-auto">
           <h1 class="h-1 text-black fw-bolder my-3">Contact With Us</h1>
-          <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p class="lead">To meet our previllage you have to confirm us through the form mentioning below or you can physically join to our address given in the address bar. We are limited our time for the office so please be concern about it.</p>
         </div> 
       </article>
+
+
       <!-- contact form  -->
 
       <div class="row gap-5 gap-md-0">
@@ -373,14 +393,14 @@
 
             <div class="card col-10 col-sm-8 mx-auto col-md-6 d-flex align-items-center bg-body-secondary p-2 py-3 border border-2 border-body-secondary">
               <div class="small-card w-50 mx-auto text-center">
-                <img class="w-25 mx-auto img-fluid" src="images/address.png" alt="">
+                <img class="w-25 mx-auto img-fluid" src="images/email.png" alt="">
                 <h4 class="my-3 fw-bold">Email Us</h4>
                 <p class="text-black-50">info@gmail.com
                   info@gmail.com</p>
               </div>
-
-
             </div>
+
+
             <div class="card col-10 col-sm-8 mx-auto col-md-6 d-flex align-items-center bg-body-secondary px-2 py-3 border border-2 border-body-secondary">
               <div class="small-card w-50 mx-auto text-center">
                 <img class="w-25 mx-auto img-fluid" src="images/time.png" alt="">
@@ -422,10 +442,12 @@
 
   </main>
 
-
+    <!----------------
+      footer Section 
+    ------------------>
 
   <footer class="py-5 mt-5 px-1 bg-black">
-    <!--  footer Section -->
+
     <div class="container text-white">
       <div class="row text-center text-md-start">
         <div class="col-md-4">

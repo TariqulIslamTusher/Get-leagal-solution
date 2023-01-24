@@ -9,29 +9,46 @@
     background: #b68c5a !important;
     color: #fff;
     font-weight: 500;
+    transition: .4s;
 }
+
 .btn-color:hover{
-    background: #a37c4d !important;
+    background: #9b7241 !important;
     color: #fff;
 }
 .btn-color:focus{
-    background: #a37c4d !important;
+    background: #9b7241 !important;
     color: #fff;
 }
 
 
 .card{
-    transition: transform .8s;
+    transition: transform .5s ease-in-out;
+    background:linear-gradient(180deg, #d6d6d66c 0%, transparent 100%);
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    background:linear-gradient(180deg, #cbc2b6 0%, transparent 100%);
 }
 
 /* navbar */
-.nav-menu li a:hover{
-    color: #111111;
-}
 
+.nav-menu ul li a{
+    position: relative;
+}
+.nav-menu ul li a::after{
+    content: "";
+    border-bottom: 2px solid #b68c5a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition:all .5s;
+}
+.nav-menu ul li a:hover::after{
+    width: 100%;
+}
 
 /* banner section  */
 .banner {

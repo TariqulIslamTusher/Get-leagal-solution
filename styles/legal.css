@@ -3,7 +3,25 @@
     margin: 0;
     padding: 0;
 }
-
+.btn-color{
+    background: #b68c5a !important;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-color:hover{
+    background: #a37c4d !important;
+    color: #fff;
+}
+.btn-color:focus{
+    transform: scale(.9);
+    color: #fff;
+}
+.card{
+    transition: transform .8s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
 
 /* navbar */
 

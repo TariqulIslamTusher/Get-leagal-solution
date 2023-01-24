@@ -7,11 +7,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS v5.2.1 -->
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/ece5ff7ef5.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- External Css link  -->
   <link rel="stylesheet" href="./styles/legal.css">
+
+
 </head>
 
 <body>
@@ -25,26 +30,90 @@
       </button>
       <!-- navbar manu  -->
       <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-0 d-flex gap-3 my-2">
-            <li><a class="text-decoration-none text-secondary fw-bold" href="#">Home</a></li>
-            <li><a class="text-decoration-none text-secondary fw-bold" href="#service">Service</a></li>
-            <li><a class="text-decoration-none text-secondary fw-bold" href="#service">Cases</a></li>
-            <li><a class="text-decoration-none text-secondary fw-bold" href="#blog">Blog</a></li>
-            <li><a class="text-decoration-none text-secondary fw-bold" href="#contact">Contact Us</a></li>
+          <ul class="navbar-nav mx-auto my-0 d-flex gap-4 my-2">
+            <li><a class="text-decoration-none text-secondary fw-bold p-2" href="#">Home</a></li>
+            <li><a class="text-decoration-none text-secondary fw-bold p-2" href="#service">Service</a></li>
+            <li><a class="text-decoration-none text-secondary fw-bold p-2" href="#service">Cases</a></li>
+            <li><a class="text-decoration-none text-secondary fw-bold p-2" href="#blog">Blog</a></li>
+            <li><a class="text-decoration-none text-secondary fw-bold p-2" href="#contact">Contact Us</a></li>
           </ul>
             <!-- navbar button  -->
-          <button class="btn btn-color py-3" type="submit">Free Consulation</button>
+          <button class="btn btn-color py-3 mt-3 mt-md-0" data-bs-target="#modalID" data-bs-toggle="modal" type="submit">Free Consulation</button>
         
         </div>
 
     </nav>
+
+
+    <!-- making modals 1  -->
+    <div class="modal fade" id="modalID">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary-subtle">
+            <div class="modal-title px-5">
+              <h3 class="text-warning d-block">Warning!!</h3>
+            </div>
+            <button class="btn btn-close p-2 bg-warning" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body bg-body-secondary px-5">
+            <p class="text-danger fw-semibold">Your data will be collected for future training/evidence purpose</p>
+            
+            <p class="fw-bold">Are you sure to connect with us?</p>
+          </div>
+          <div class="modal-footer bg-secondary-subtle px-5">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary" data-bs-target="#modalID2" data-bs-toggle="modal">Yes, I am sure</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--making modal no 2  -->
+    <div class="modal fade" id="modalID2">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header p-3 bg-primary-subtle text-uppercase fw-bold">Please Fill the following form</div>
+          <div class="modal-body p-3">
+
+            <input required placeholder="Your Name" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="text" name="" id="">
+
+
+            <input required placeholder="Your Email" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="email" name="" id="">
+
+            <input required placeholder="Subject of Case" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="text" name="" id="">
+
+
+            <textarea name="opinion" placeholder="Your Massage" class="bg-body-secondary w-100 border-0 rounded-2 py-4 px-4 mb-2" id="opinion" cols="30" rows="3"></textarea>
+          </div>
+          <div class="modal-footer p-3">
+            <button class="btn btn-outline-danger" data-bs-dismiss="">Decline</button>
+            <button class="btn btn-success" data-bs-target="#modalID3" data-bs-toggle="modal">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- making modal no 3 -->
+    <div class="modal fade" id="modalID3">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-success-subtle p-5">
+          <h4 class="text-center text-success h2">Congratulation!!!</h4>
+          <p class="text-danger text-center h3">You will be quaried by one of our member</p>
+        </div>
+      </div>
+    </div>
+
+
+
 
     <!-- Banner section  -->
 
     <section class="row banner container d-flex align-items-center mx-auto">
       <article class="col-sm-11 col-md-10 col-lg-8 caption mx-auto text-center">
         <h1 class="display-3 text-white fw-bolder">We Provide Effective <br> Legal Solutions</h1>
-        <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <p class="text-white">Our service is most popular then any other organisations in this region. We can assure you to help for the discipline purpose. We work in several laws which are mention breifly in next session</p>
         <div class="row d-flex align-items-center g-3 text-center">
           <input class="col-10 col-md-8 py-3 border-0 rounded-3 mx-auto px-4" type="text" height="64" width="500" placeholder="Search your service">
           <button class="col-6 col-sm-3 col-md-3 btn btn-color py-3 mx-auto ms-md-1">Search</button>
@@ -63,7 +132,7 @@
 
       <div class="col-md-8 text-center mx-auto">
         <h1 class="h-1 text-black fw-bolder my-3">The Legal Practice Area</h1>
-        <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <p class="lead">Our Legal practicing is showing as card view. For further more information you can take free consultation class on the top right button by filling your identity form</p>
       </div>
 
 
@@ -213,41 +282,45 @@
           <div class="accordion-item my-5 bg-light">
             <h2 class="accordion-header" id="flush-headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Accordion Item #1
+                <strong>What is difference between flexbox and Grid? </strong>
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              <div class="accordion-body">The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.</div>
             </div>
           </div>
           <div class="accordion-item my-5 bg-light">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Accordion Item #2
+                <strong>What is the purpose of @media query? How does it work?</strong>
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              <div class="accordion-body">Media queries are a key part of responsive web design, as they allow you to create different layouts depending on the size of the viewport, but they can also be used to detect other things about the environment your site is running on, for example whether the user is using a touchscreen rather than a mouse.</div>
             </div>
           </div>
           <div class="accordion-item my-5 bg-light">
             <h2 class="accordion-header" id="flush-headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Accordion Item #3
+                <strong>What is Css Box-model?</strong>
               </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              <div class="accordion-body">In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element.
+                <br>
+                <br>
+                The CSS Box Model is used to create a definition for the way the HTML elements are organized on the screen. This approach accounts for options such as margins, padding, borders, and all the properties that manipulate them. Each element can be thought of as having its own box.
+              </div>
             </div>
           </div>
           <div class="accordion-item my-5 bg-light">
             <h2 class="accordion-header" id="flush-headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                Accordion Item #4
+                <strong>What is semantic tag?</strong>
               </button>
             </h2>
             <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              <div class="accordion-body">The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages. The pages made with semantic elements are much easier to read. It has greater accessibility. It offers a better user experience.</div>
             </div>
           </div>
         </div>
@@ -354,14 +427,14 @@
   <footer class="py-5 mt-5 px-1 bg-black">
     <!--  footer Section -->
     <div class="container text-white">
-      <div class="row">
-        <div class="col-md-3">
-          <img class="text-white mb-3" src="images/logo2.png" alt="">
-          <p class="text-justifytext-white-50">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4">
+          <img class="mb-4" src="./images/logo.png" alt="">
+          <p class="text-justify text-white-50">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
           </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <h4 class="mb-4">Useful links</h4>
           <ul class="list-unstyled">
             <li><a class="text-decoration-none text-white-50" href="#">Home</a></li>
@@ -387,13 +460,14 @@
 
         <div class="col-md-3">
           <h4 class="mb-4">Subscribe</h4>
-          <p class="text-justify text-white-50">
+          <p class="text-justify text-white-50 w-75 mx-auto mx-md-0">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
           </p>
 
-          <div class="d-flex align-items-center position-relative">
-            <input placeholder="Your Name" class="bg-body-secondary text-white-50 w-75 border-0 rounded-2 py-3 px-4 mb-3" type="text" name="" id="">
-            <img class="w-25 h-100" src="images/Frame.png" alt="">
+          <div class="d-flex align-items-center">
+            <input placeholder="Your Name" class="bg-body-secondary text-white-50 w-75 border-0 rounded-start-2 py-3 px-4" type="text" name="" id="">
+            <button class="btn btn-color w-25 h-100 border-0 py-3 px-4" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+         
           </div>
         </div>
       </div>

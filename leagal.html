@@ -16,34 +16,27 @@
 
 <body>
   <header>
-    <!--  navbar  -->
-    <nav class="py-4 container">
-      <div class="row align-items-center">
-        <!-- header icon  -->
-        <div class="col-6 col-md-3 order-1 ">
-          <img src="./images/logo2.png" alt="">
+    <!--  navbar using bootstrap -->
+    <nav class="navbar py-4 px-3 px-md-0 container navbar-expand-md">
+      <!-- nav icon  -->
+      <a class="navbar-brand" href="#"><img src="./images/logo2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar manu  -->
+      <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-0 d-flex gap-3 my-2">
+            <li><a class="text-decoration-none text-secondary fw-bold" href="#">Home</a></li>
+            <li><a class="text-decoration-none text-secondary fw-bold" href="#">Service</a></li>
+            <li><a class="text-decoration-none text-secondary fw-bold" href="#">Cases</a></li>
+            <li><a class="text-decoration-none text-secondary fw-bold" href="#">Blog</a></li>
+            <li><a class="text-decoration-none text-secondary fw-bold" href="#">Contact Us</a></li>
+          </ul>
+            <!-- navbar button  -->
+          <button class="btn btn-outline-success" type="submit">Free Consulation</button>
+        
         </div>
 
-            <!-- navbar dropdown menu  -->
-        <div class="col-12 col-md-6 order-3 order-md-2 d-flex justify-content-center">
-          <div class="nav-manu">
-            <ul class="list-unstyled d-flex gap-3 mb-0">
-              <li><a class="text-decoration-none text-secondary fw-bold" href="#">Home</a></li>
-              <li><a class="text-decoration-none text-secondary fw-bold" href="#">Service</a></li>
-              <li><a class="text-decoration-none text-secondary fw-bold" href="#">Cases</a></li>
-              <li><a class="text-decoration-none text-secondary fw-bold" href="#">Blog</a></li>
-              <li><a class="text-decoration-none text-secondary fw-bold" href="#">Contact Us</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <!-- header button  -->
-        <div class="col-6 col-md-3 order-2 order-md-3 d-flex justify-content-end">
-          <button class="btn btn-warning bg-opacity-25 bg-warning">Free Consulation</button>
-        </div>
-      </div>
-      
     </nav>
 
     <!-- Banner section  -->
@@ -54,7 +47,7 @@
         <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
         <div class="row d-flex align-items-center g-3 text-center">
           <input class="col-10 col-md-8 py-3 border-0 rounded-3 mx-auto px-4" type="text" height="64" width="500" placeholder="Search your service">
-          <button class="col-10 col-md-3 btn btn-warning py-3 mx-auto ms-md-1">Search</button>
+          <button class="col-6 col-sm-3 col-md-3 btn btn-warning py-3 mx-auto ms-md-1">Search</button>
         </div>
       </article>
     </section>
@@ -204,7 +197,7 @@
 
     <!-- Question And Answer section  -->
 
-    <section class="question">
+    <section class="question py-5 mt-5 px-1">
       <article class="row mb-4 question-heading">
         <div class="col-md-8 text-center mx-auto">
           <h1 class="h-1 text-black fw-bolder my-3">Frequently Asked Any Questions</h1>
@@ -258,6 +251,90 @@
 
         <div class="col-10 col-md-6 mx-auto img-div order-1 order-md-2">
           <img class="img-fluid object-fit-cover" src="images/faq.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Contact Section  -->
+
+    <section class="contact py-5 mt-5 px-1">
+      <!-- contact heading  -->
+      <article class="row mb-4 question-heading">
+        <div class="col-md-8 text-center mx-auto">
+          <h1 class="h-1 text-black fw-bolder my-3">Contact With Us</h1>
+          <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div> 
+      </article>
+      <!-- contact form  -->
+
+      <div class="row gap-5 gap-md-0">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-10 col-sm-8 mx-auto col-md-6 d-flex align-items-center bg-body-secondary p-2 py-3 border border-2 border-body-secondary">
+              <div class="small-card w-50 mx-auto text-center">
+                <img class="w-25 mx-auto img-fluid" src="images/address.png" alt="">
+                <h4 class="my-3 fw-bold">Address</h4>
+                <p class="text-black-50">A108 Adam Street,
+                  New York, NY 535022</p>
+              </div>
+            </div>
+
+
+            <div class="col-10 col-sm-8 mx-auto col-md-6 d-flex align-items-center bg-body-secondary p-2 py-3 border border-2 border-body-secondary">
+              <div class="small-card w-50 mx-auto text-center">
+                <img class="w-25 mx-auto img-fluid" src="images/call.png" alt="">
+                <h4 class="my-3 fw-bold">Call Us</h4>
+                <p class="text-black-50">+88 01750 00 00 
+                  +88 01750 00 00 </p>
+              </div>
+            </div>
+
+
+            <div class="col-10 col-sm-8 mx-auto col-md-6 d-flex align-items-center bg-body-secondary p-2 py-3 border border-2 border-body-secondary">
+              <div class="small-card w-50 mx-auto text-center">
+                <img class="w-25 mx-auto img-fluid" src="images/address.png" alt="">
+                <h4 class="my-3 fw-bold">Email Us</h4>
+                <p class="text-black-50">info@gmail.com
+                  info@gmail.com</p>
+              </div>
+
+
+            </div>
+            <div class="col-10 col-sm-8 mx-auto col-md-6 d-flex align-items-center bg-body-secondary px-2 py-3 border border-2 border-body-secondary">
+              <div class="small-card w-50 mx-auto text-center">
+                <img class="w-25 mx-auto img-fluid" src="images/time.png" alt="">
+                <h4 class="my-3 fw-bold">Working Hour</h4>
+                <p class="text-black-50">Mon-Fri: 9AM to 5PM
+                  Sunday: 9AM to 1 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-12">
+              <input placeholder="Your Name" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="text" name="" id="">
+            </div>
+            <div class="col-12">
+              <input placeholder="Your Email" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="email" name="" id="">
+            </div>
+            <div class="col-12">
+              <input placeholder="Subject of Case" class="bg-body-secondary w-100 border-0 rounded-2 py-3 px-4 mb-3" type="text" name="" id="">
+            </div>
+            <div class="col-12">
+              <textarea name="opinion" placeholder="Your Massage" class="bg-body-secondary w-100 border-0 rounded-2 py-4 px-4 mb-2" id="opinion" cols="30" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-success w-100 border-0 rounded-2 py-3 px-4" type="submit">Massage</button>
+            </div>
+
+
+          </div>
+
         </div>
       </div>
 
